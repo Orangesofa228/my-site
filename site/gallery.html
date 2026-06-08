@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Мой первый курс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Фотогалерея</h1>
+            <p class="subtitle">Коллекция изображений по теме: <span class="theme-name">Жизнь колледжа</span></p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="gallery.html" class="nav-link active"><i class="fas fa-camera"></i> Галерея</a></li>
+                <li><a href="contacts.html" class="nav-link"><i class="fas fa-info-circle"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="nature">Волонтерство</button>
+                <button class="filter-btn" data-filter="city">Хеллоувин</button>
+                <button class="filter-btn" data-filter="people">Колледж</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery">
+
+            <article class="image-card" data-category="Колледж">
+                <div class="card-image">
+                    <img src="images/your-image1.jpg" alt="Сам колледж" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                <button class="like-btn" data-id="1">
+                    <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Главный вход</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> октябрь 2025</p>
+                    <p class="image-description">Первые шаги в колледж сопроваждались ужасом и страхом,но со временем понимаешь насколько ценно это место...</p>
+            <div class="image-tags">
+                <span class="tag">Колледж</span>
+            </div>
+                </div>
+            </article>
+
+
+            <article class="image-card" data-category="Хеллоувин">
+                <div class="card-image">
+            <img src="images/your-image2.jpg" alt="Грим на хеллоувин" class="gallery-img" loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+            <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+            <h3 class="image-title">Один из самых интересных моментов</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 31 октября 2025</p>
+            <p class="image-description">Мы собрались с 2 курсом комнате волонтеров и делали офигенный грим,мы злые миньоны =3</p>
+            <div class="image-tags">
+                <span class="tag">Хеллоувин</span>
+            </div>
+                </div>
+            </article>
+
+ <article class="image-card" data-category="Хеллоувин">
+                <div class="card-image">
+            <img src="images/your-image3.jpg" alt="Грим на хеллоувин" class="gallery-img" loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+            <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+            <p class="image-date"><i class="far fa-calendar"></i> 31 октября 2025</p>
+            <div class="image-tags">
+                <span class="tag">Хеллоувин</span>
+            </div>
+                </div>
+            </article>
+
+
+            <article class="image-card" data-category="Хеллоувин">
+                <div class="card-image">
+            <img src="images/your-image3.jpg" alt="Грим на хеллоувин" class="gallery-img" loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+            <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+            <p class="image-date"><i class="far fa-calendar"></i> 31 октября 2025</p>
+            <div class="image-tags">
+                <span class="tag">Хеллоувин</span>
+            </div>
+                </div>
+            </article>
+
+
+
+            <article class="image-card" data-category="Хеллоувин">
+                <div class="card-image">
+            <img src="images/your-image6.jpg" alt="Грим на хеллоувин" class="gallery-img" loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+            <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+            <p class="image-date"><i class="far fa-calendar"></i> 31 октября 2025</p>
+            <div class="image-tags">
+                <span class="tag">Хеллоувин</span>
+            </div>
+                </div>
+            </article>
+
+            <article class="image-card" data-category="Волонтерство">
+                <div class="card-image">
+            <img src="images/your-image4.jpg" alt="Волонтерство" class="gallery-img" loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+            <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+            <h3 class="image-title">Жизнь колледжа расцветала</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 30 октября 2025</p>
+            <p class="image-description">С одногрупницами проводили мероприятия идни открытых дверей</p>
+            <div class="image-tags">
+                <span class="tag">Волонтерство</span>
+            </div>
+                </div>
+            </article>
+
+
+
+              <article class="image-card" data-category="Волонтерство">
+                <div class="card-image">
+            <img src="images/your-image5.jpg" alt="Волонтерство" class="gallery-img" loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+            <i class="far fa-heart"></i>
+            <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+            <i class="fas fa-expand"></i>
+                </button>
+            </div>
+                </div>
+                <div class="card-content">
+            <p class="image-date"><i class="far fa-calendar"></i> 30 октября 2025</p>
+            <div class="image-tags">
+                <span class="tag">Волонтерство</span>
+            </div>
+                </div>
+            </article>
+
+
+
+       
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2026</span> София. Все права защищены.</p>
+            <p class="js-status">JavaScript загружен и работает!</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
